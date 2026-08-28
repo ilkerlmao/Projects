@@ -1,0 +1,1 @@
+# fresh django project, this is where ill add changes lol
