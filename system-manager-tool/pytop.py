@@ -33,7 +33,7 @@ class SystemStatsWidget(Static):
             container.mount(Static(f"CPU {i}:", classes="stat_label"))
             container.mount(ProgressBar(total=100, show_percentage=True, id=f"cpu_bar_{i}"))
 
-    def update_statsq(self) -> None:
+    def update_stats(self) -> None:
         # Update CPU per-core usage
         per_cpu = psutil.cpu_percent(percpu=True)
         for i, val in enumerate(per_cpu):
